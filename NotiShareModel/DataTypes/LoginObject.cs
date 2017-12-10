@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace NotiShareModel.DataTypes
 {
-    public class LoginObject:RegistrationObject
+    public class LoginObject :DefaultUserData
     {
+        
     }
 }

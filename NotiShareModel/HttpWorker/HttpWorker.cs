@@ -36,9 +36,10 @@ namespace NotiShareModel.HttpWorker
         }
 
 
-        public async Task<string> Login(LoginObject loginObject)
+        public async Task<LoginResult> Login(LoginObject loginObject)
         {
-            return await PostRequest(loginObject, $"{DefaultUrl}/login");
+            var result = await PostRequest(loginObject, $"{DefaultUrl}/login");
+            return JsonConvert.DeserializeObject<LoginResult>(result);
         }
 
 

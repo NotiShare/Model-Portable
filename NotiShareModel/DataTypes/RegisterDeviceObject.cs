@@ -19,7 +19,7 @@ namespace NotiShareModel.DataTypes
         [JsonProperty(PropertyName = "deviceType")]
         public int DeviceType { get; set; }
 
-        [JsonProperty(PropertyName = "DeviceName")]
+        [JsonProperty(PropertyName = "deviceName")]
         public string DeviceName { get; set; }
     }
 }

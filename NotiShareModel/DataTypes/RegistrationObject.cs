@@ -2,7 +2,7 @@
 
 namespace NotiShareModel.DataTypes
 {
-    public class RegistrationObject
+    public class RegistrationObject : DefaultUserData
     {
          
         [JsonProperty(PropertyName = "name")]
@@ -15,10 +15,6 @@ namespace NotiShareModel.DataTypes
         [JsonProperty(PropertyName = "email")]
         public string Email { get; set; }
 
-        [JsonProperty(PropertyName = "userName")]
-        public string UserName { get; set; }
-
-        [JsonProperty(PropertyName = "passwordHash")]
-        public string PasswordHash { get; set; }
+        
     }
 }
