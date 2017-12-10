@@ -20,6 +20,7 @@ namespace NotiShareModel.DataTypes
         [JsonProperty(PropertyName = "image")]
         public string ImageBase64 { get; set; }
 
-
+        [JsonProperty(PropertyName = "datetimeCreation")]
+        public DateTime DatetimeCreation { get; set; }
     }
 }
