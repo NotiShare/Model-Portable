@@ -10,17 +10,17 @@ namespace NotiShareModel.DataTypes
     public class NotificationObject
     {
 
-        [JsonProperty(PropertyName = "title")]
+        [JsonProperty(PropertyName = "notification_title")]
         public string Title { get; set; }
 
-        [JsonProperty(PropertyName = "notificationText")]
+        [JsonProperty(PropertyName = "notification_text")]
         public string NotificationText { get; set; }
 
 
         [JsonProperty(PropertyName = "image")]
         public string ImageBase64 { get; set; }
 
-        [JsonProperty(PropertyName = "datetimeCreation")]
+        [JsonProperty(PropertyName = "datetime_sending")]
         public DateTime DatetimeCreation { get; set; }
     }
 }

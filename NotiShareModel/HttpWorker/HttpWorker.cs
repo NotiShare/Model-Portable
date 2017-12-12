@@ -18,7 +18,7 @@ namespace NotiShareModel.HttpWorker
         private HttpClient client;
 
         public static HttpWorker Instance => singleton.Value;
-        private const int Timeout = 10;
+        private const int Timeout = 180;
 
         private readonly string DefaultUrl = UrlResource.ServerUrl;
 
@@ -38,7 +38,7 @@ namespace NotiShareModel.HttpWorker
 
         public async Task<LoginResult> Login(LoginObject loginObject)
         {
-            var result = await PostRequest(loginObject, $"{DefaultUrl}/login");
+            var result = await PostRequest(loginObject, $"{DefaultUrl}/login").ConfigureAwait(false);
             return JsonConvert.DeserializeObject<LoginResult>(result);
         }
 

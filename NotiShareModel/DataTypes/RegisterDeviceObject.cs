@@ -10,16 +10,16 @@ namespace NotiShareModel.DataTypes
     public class RegisterDeviceObject
     {
         
-        [JsonProperty(PropertyName = "userId")]
+        [JsonProperty(PropertyName = "user_id")]
         public int UserId { get; set; }
 
         [JsonProperty(PropertyName = "deviceId")]
         public string DeviceId { get; set; }
 
-        [JsonProperty(PropertyName = "deviceType")]
+        [JsonProperty(PropertyName = "device_type_id")]
         public int DeviceType { get; set; }
 
-        [JsonProperty(PropertyName = "deviceName")]
+        [JsonProperty(PropertyName = "device_name")]
         public string DeviceName { get; set; }
     }
 }

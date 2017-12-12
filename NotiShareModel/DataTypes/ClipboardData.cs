@@ -7,14 +7,14 @@ namespace NotiShareModel.DataTypes
 {
     public class ClipboardData
     {
-        [JsonProperty(PropertyName = "clipboardData")]
+        [JsonProperty(PropertyName = "clipboardText")]
         public string ClipboardStringData { get; set; }
 
-        [JsonProperty(PropertyName = "dataType")]
+        [JsonProperty(PropertyName = "clipboard_data_type_id")]
         public int DataType { get; set; }
 
 
-        [JsonProperty(PropertyName = "datetimeCreation")]
+        [JsonProperty(PropertyName = "clipboardDateCreation")]
         public DateTime DatetimeCreation { get; set; }
     }
 }
